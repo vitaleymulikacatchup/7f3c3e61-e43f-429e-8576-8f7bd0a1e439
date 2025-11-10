@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import HeroBillboardCarousel from '@/components/sections/hero/HeroBillboardCarousel';
@@ -15,7 +15,7 @@ import BlogCardOne from '@/components/sections/blog/BlogCardOne';
 import ContactCenterForm from '@/components/sections/contact/ContactCenterForm';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import { BarChart3, BookOpen, Crown, Gamepad2, HelpCircle, MessageSquare, Newspaper, Sparkles, Target, Twitch, Twitter, Users, Youtube, Zap } from "lucide-react";
+import { BarChart3, BookOpen, Crown, Gamepad2, HelpCircle, MessageSquare, Newspaper, Sparkles, Target, Twitch, Twitter, Users, Youtube, Zap, Users as UsersIcon, Clock } from "lucide-react";
 
 export default function Home() {
   return (
@@ -99,9 +99,9 @@ export default function Home() {
           gridVariant="uniform-all-items-equal"
           animationType="slide-up"
           products={[
-            {"id":"ultimate-fps-guide","name":"Ultimate FPS Mastery","price":"$29.99","imageSrc":"https://pixabay.com/get/ge5e47897c31380727140436b65e9893c705d2d8bfd6b7d83c9a6fe52c67ac4b7d80bcaaff07f859ed2567bdae18f05994d4fd6d3b1f0c8dc236793751c19064e_1280.jpg","imageAlt":"FPS gaming guide","onProductClick":"() => window.open('https://example.com', '_blank')"},
-            {"id":"moba-strategy-guide","name":"MOBA Strategy Bible","price":"$24.99","imageSrc":"https://pixabay.com/get/g40f71dc2c3c3dc5b55ac9bc20398d56dd85f4b01eecd63d30809444029393bbf9d997f49b77f937810c930a5c3f06cb0921781b8259aba59a5cc44a8bc011c3c_1280.jpg","imageAlt":"MOBA strategy guide","onProductClick":"() => window.open('https://example.com', '_blank')"},
-            {"id":"streaming-success","name":"Streaming Success Course","price":"$39.99","imageSrc":"https://pixabay.com/get/g6094ee7b2746ca564424df214fc6af519e8da375c653f324d7a0eb8262ee4b219c8843d5df5fe2de5892bf21d0128694739deb72878d6ba0725f95ca0bd0a24e_1280.jpg","imageAlt":"Streaming guide course","onProductClick":"() => window.open('https://example.com', '_blank')"}
+            {"id":"ultimate-fps-guide","name":"Ultimate FPS Mastery","price":"$29.99","imageSrc":"https://pixabay.com/get/ge5e47897c31380727140436b65e9893c705d2d8bfd6b7d83c9a6fe52c67ac4b7d80bcaaff07f859ed2567bdae18f05994d4fd6d3b1f0c8dc236793751c19064e_1280.jpg","imageAlt":"FPS gaming guide","onProductClick":() => window.open('https://example.com', '_blank')},
+            {"id":"moba-strategy-guide","name":"MOBA Strategy Bible","price":"$24.99","imageSrc":"https://pixabay.com/get/g40f71dc2c3c3dc5b55ac9bc20398d56dd85f4b01eecd63d30809444029393bbf9d997f49b77f937810c930a5c3f06cb0921781b8259aba59a5cc44a8bc011c3c_1280.jpg","imageAlt":"MOBA strategy guide","onProductClick":() => window.open('https://example.com', '_blank')},
+            {"id":"streaming-success","name":"Streaming Success Course","price":"$39.99","imageSrc":"https://pixabay.com/get/g6094ee7b2746ca564424df214fc6af519e8da375c653f324d7a0eb8262ee4b219c8843d5df5fe2de5892bf21d0128694739deb72878d6ba0725f95ca0bd0a24e_1280.jpg","imageAlt":"Streaming guide course","onProductClick":() => window.open('https://example.com', '_blank')}
           ]}
         />
       </div>
@@ -132,10 +132,10 @@ export default function Home() {
           gridVariant="uniform-all-items-equal"
           animationType="slide-up"
           metrics={[
-            {"id":"1","value":"50K+","title":"Gamers","description":"Active community members improving their skills","icon":"Users"},
-            {"id":"2","value":"200+","title":"Guides","description":"Expert gaming guides across all genres","icon":"BookOpen"},
-            {"id":"3","value":"95%","title":"Success Rate","description":"Players report improved gameplay after following our guides","icon":"Target"},
-            {"id":"4","value":"24/7","title":"Support","description":"Round-the-clock community and expert assistance","icon":"Clock"}
+            {"id":"1","value":"50K+","title":"Gamers","description":"Active community members improving their skills","icon":UsersIcon},
+            {"id":"2","value":"200+","title":"Guides","description":"Expert gaming guides across all genres","icon":BookOpen},
+            {"id":"3","value":"95%","title":"Success Rate","description":"Players report improved gameplay after following our guides","icon":Target},
+            {"id":"4","value":"24/7","title":"Support","description":"Round-the-clock community and expert assistance","icon":Clock}
           ]}
         />
       </div>
@@ -218,9 +218,9 @@ export default function Home() {
           textboxLayout="default"
           animationType="slide-up"
           blogs={[
-            {"id":"1","category":"Tips","title":"10 Essential Gaming Tips for 2024","excerpt":"Master these fundamental gaming techniques that will improve your performance across all genres and platforms","imageSrc":"https://pixabay.com/get/g5803676a28231486f48a5ec41ffa3e71b7157084597e8d1a7abea53ca12cc0e23c751081f248d0d7f1d54a55240141b3d41daed5ceceb80f21fd5008c5ea9adc_1280.jpg","imageAlt":"Gaming tips tutorial","authorName":"Alex Chen","authorAvatar":"https://pixabay.com/get/g32b460360ac500cbd988ea37f305f716be56deb20a56bc0749205f0f2fa47c58055f885200ae98540f32061ed4c0bc0f2b5ac2f4e029b720f944c8efd1cf4ef0_1280.jpg","date":"15 Jan 2024","onBlogClick":"() => console.log('Blog clicked')"},
-            {"id":"2","category":"Esports","title":"The Rise of Mobile Esports","excerpt":"How mobile gaming is reshaping the competitive esports landscape and what it means for players","imageSrc":"https://pixabay.com/get/g8c76897878f79bd589ae7710a693e31519cc0230e7bde220f1137a3ae6a8e553fff7a9d82708804dc76c2b17659871f0d9bc5dda82d376145e21c85fc2b6d859_1280.jpg","imageAlt":"Mobile esports competition","authorName":"Sarah Kim","authorAvatar":"https://pixabay.com/get/ga65a3c9ab2cc6b1e435a258704ed97f02b7f895e61f47d5d68fdffc91ea1a889c4fa0bf4251454a9e7758b35682aae26_1280.jpg","date":"12 Jan 2024","onBlogClick":"() => console.log('Blog clicked')"},
-            {"id":"3","category":"Reviews","title":"Best Gaming Hardware of 2024","excerpt":"Our comprehensive review of the top gaming peripherals, graphics cards, and accessories for serious gamers","imageSrc":"https://pixabay.com/get/g495e8b21e2420bf080625819d371553e8b1bf9a3176aeb749c21317ce125396ca3d0d40f224a80e3e420cfe0bf7dd7d1fdd13a74cb445ca1a0b2a24caf4aeb80_1280.jpg","imageAlt":"Gaming hardware review","authorName":"David Thompson","authorAvatar":"https://pixabay.com/get/gf8ad41d5ec2d780c726c1157d8166fac8eb92337f1a4183ff85c700d2d80f8e0d62255ca8ecb99ee2989b5f73f33b08e6ce8f3802bed417d172670400211edc2_1280.jpg","date":"10 Jan 2024","onBlogClick":"() => console.log('Blog clicked')"}
+            {"id":"1","category":"Tips","title":"10 Essential Gaming Tips for 2024","excerpt":"Master these fundamental gaming techniques that will improve your performance across all genres and platforms","imageSrc":"https://pixabay.com/get/g5803676a28231486f48a5ec41ffa3e71b7157084597e8d1a7abea53ca12cc0e23c751081f248d0d7f1d54a55240141b3d41daed5ceceb80f21fd5008c5ea9adc_1280.jpg","imageAlt":"Gaming tips tutorial","authorName":"Alex Chen","authorAvatar":"https://pixabay.com/get/g32b460360ac500cbd988ea37f305f716be56deb20a56bc0749205f0f2fa47c58055f885200ae98540f32061ed4c0bc0f2b5ac2f4e029b720f944c8efd1cf4ef0_1280.jpg","date":"15 Jan 2024","onBlogClick":() => console.log('Blog clicked')},
+            {"id":"2","category":"Esports","title":"The Rise of Mobile Esports","excerpt":"How mobile gaming is reshaping the competitive esports landscape and what it means for players","imageSrc":"https://pixabay.com/get/g8c76897878f79bd589ae7710a693e31519cc0230e7bde220f1137a3ae6a8e553fff7a9d82708804dc76c2b17659871f0d9bc5dda82d376145e21c85fc2b6d859_1280.jpg","imageAlt":"Mobile esports competition","authorName":"Sarah Kim","authorAvatar":"https://pixabay.com/get/ga65a3c9ab2cc6b1e435a258704ed97f02b7f895e61f47d5d68fdffc91ea1a889c4fa0bf4251454a9e7758b35682aae26_1280.jpg","date":"12 Jan 2024","onBlogClick":() => console.log('Blog clicked')},
+            {"id":"3","category":"Reviews","title":"Best Gaming Hardware of 2024","excerpt":"Our comprehensive review of the top gaming peripherals, graphics cards, and accessories for serious gamers","imageSrc":"https://pixabay.com/get/g495e8b21e2420bf080625819d371553e8b1bf9a3176aeb749c21317ce125396ca3d0d40f224a80e3e420cfe0bf7dd7d1fdd13a74cb445ca1a0b2a24caf4aeb80_1280.jpg","imageAlt":"Gaming hardware review","authorName":"David Thompson","authorAvatar":"https://pixabay.com/get/gf8ad41d5ec2d780c726c1157d8166fac8eb92337f1a4183ff85c700d2d80f8e0d62255ca8ecb99ee2989b5f73f33b08e6ce8f3802bed417d172670400211edc2_1280.jpg","date":"10 Jan 2024","onBlogClick":() => console.log('Blog clicked')}
           ]}
         />
       </div>
